@@ -1,30 +1,23 @@
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import styles bundle
-import 'swiper/css/bundle';
+// Import Swiper styles
+import './swiper.css';
 
-// init Swiper:
-// const swiper = new Swiper(...);
+export default function Home({ slides }) {
+  return (
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={2}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.image}>
+          <img src={slide.image} slt={slide.title} className='imgg'/>
+        </SwiperSlide>
+      ))}
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+    </Swiper>
+  );
+};
