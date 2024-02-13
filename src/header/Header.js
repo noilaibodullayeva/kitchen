@@ -1,7 +1,7 @@
 import Logo from "../img/logo.png.webp"
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
-import { Facebook, Menu, Twitter } from '@mui/icons-material';
-import { Box, AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Facebook, Twitter } from '@mui/icons-material';
+import { Box, Tab, Tabs, useMediaQuery, useTheme } from "@mui/material";
 import React, { useState } from "react";
 import Drawercomponent from './Drawer';
 

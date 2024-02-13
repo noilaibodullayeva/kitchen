@@ -14,7 +14,7 @@ export default function Section3() {
                 <Typography sx={styles.story}>OUR STORY <ArrowRightAltIcon /> </Typography>
             </Box>
             <Box sx={styles.boxImg}>
-                <img src={Img4} alt="" className='img' />
+                {/* <img src={Img4} alt="" className='img' /> */}
             </Box>
         </Box>
     )
@@ -27,14 +27,28 @@ const styles = {
         flexDirection: { md: 'row', xs: 'column' },
         justifyContent: 'center',
         alignItems: 'baseline',
-        padding: { md: '30px 70px', xs: '20px 15px' },
-        gap: '20px'
+        padding: { md: '10px', xs: '20px 15px' },
+        gap: '40px',
+        bachgroundColor: '#ECECEC'
     },
     boxLi: {
-        width: { md: '50%', xs: '100%' }
+        width: { md: '50%', xs: '100%' },
+        height: '300px',
+        marginTop: '-70px'
     },
     boxImg: {
-        width: { md: '50%', xs: '100%' }
+        width: { md: '450px', xs: '100%' },
+        backgroundImage: `url(${Img4})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        height: '450px',
+        borderRadius: '15px',
+        margin: '30px 15px',
+        "&:hover": {
+            transform: 'scale(1.1, 1.2)',
+            overflow: 'hidden'
+        }
+
     },
     italian: {
         fontFamily: 'Courgette',

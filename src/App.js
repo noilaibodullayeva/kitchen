@@ -1,8 +1,9 @@
 import { Box } from '@mui/material';
 import './App.css';
 import Header from './header/Header';
-import Section3 from './section 2/section3';
+import Section3 from './section 3/section3';
 import Home from './home/Home';
+import Section4 from './section 4/Section4';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <Section3 />
+      <Section4 />
     </Box>
   );
 }

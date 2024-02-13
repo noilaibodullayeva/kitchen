@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -76,5 +76,32 @@ export default function Home() {
 }
 
 const styles = {
-
+  welcome: {
+    fontFamily: 'Courgette',
+    fontSize: '60px',
+    lineHeight: 1.1,
+    color: 'white',
+    animationDuration: '1s',
+    animationFillMode: 'both',
+  },
+  buttonSlide: {
+    backgroundColor: 'white',
+    color: '#ec1d25',
+    padding: '10px 25px',
+    borderRadius: '15px',
+    "&:hover": {
+      backgroundColor: '#ec1d25',
+      color: 'white',
+    }
+  },
+  pato: {
+    fontFamily: 'Poppins',
+    fontWeight: 700,
+    fontSize: '90px',
+    lineHeight: 1.1,
+    color: 'white',
+    textTransform: 'uppercase',
+    letterSpacing: '10px',
+    wordSpacing: '10px',
+  }
 }
