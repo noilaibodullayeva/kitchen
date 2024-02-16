@@ -4,6 +4,8 @@ import Img15 from "../img/our-menu-01.jpg.webp"
 import Img16 from "../img/our-menu-05.jpg.webp"
 import Img17 from "../img/our-menu-08.jpg.webp"
 import Img18 from "../img/our-menu-10.jpg.webp"
+import Img19 from "../img/our-menu-13.jpg.webp"
+import Img20 from "../img/our-menu-16.jpg.webp"
 
 export default function Section6() {
     return (
@@ -35,7 +37,15 @@ export default function Section6() {
                         </Box>
                     </Box>
                 </Box>
+                <Box sx={styles.ikkinchi}>
+                    <Box sx={styles.demo8}>
+                        <Box sx={styles.boxImg8}><Button sx={styles.button6}>HAAPY HOUR</Button></Box>
 
+                    </Box>
+                    <Box sx={styles.demo7}>
+                        <Box sx={styles.boxImg9}><Button sx={styles.button6}>DESERTS</Button></Box>
+                    </Box>
+                </Box>
             </Box>
         </Box>
     )
@@ -69,10 +79,17 @@ const styles = {
     },
     birinchi: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: { md: 'row', xs: 'column' },
         alignItems: 'center',
         justifyContent: 'center',
         pt: '50px'
+    },
+    ikkinchi: {
+        display: 'flex',
+        flexDirection: { md: 'row', xs: 'column' },
+        alignItems: 'center',
+        justifyContent: 'center',
+        pt: '30px'
     },
     demo4: {
         borderRadius: '15px',
@@ -105,7 +122,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         cursor: 'pointer',
-        mb:'23px'
+        mb: '23px'
     },
     demo7: {
         borderRadius: '15px',
@@ -116,6 +133,18 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         cursor: 'pointer',
+    },
+    demo8: {
+        borderRadius: '15px',
+        width: { md: '720px', xs: '350px' },
+        overflow: 'hidden',
+        height: '240px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        cursor: 'pointer',
+        mr: '20px',
+        margin: {xs:'20px 10px'}
     },
     boxImg4: {
         width: '100%',
@@ -165,6 +194,30 @@ const styles = {
             transform: 'scale(1.1)',
         },
     },
+    boxImg8: {
+        width: '100%',
+        backgroundImage: `url(${Img19})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        height: '100%',
+        transition: 'all 0.3s',
+        overflow: 'hidden',
+        '&:hover': {
+            transform: 'scale(1.1)',
+        },
+    },
+    boxImg9: {
+        width: '100%',
+        backgroundImage: `url(${Img20})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        height: '100%',
+        transition: 'all 0.3s',
+        overflow: 'hidden',
+        '&:hover': {
+            transform: 'scale(1.1)',
+        },
+    },
     button6: {
         backgroundColor: 'white',
         color: '#ec1d25',
@@ -175,8 +228,8 @@ const styles = {
             color: 'white',
         },
         position: 'absolute',
-        top:'45%',
+        top: '45%',
         left: '35%',
-        display:'block'
+        display: 'block'
     }
 }
