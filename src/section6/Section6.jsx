@@ -152,7 +152,7 @@ const styles = {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         height: '100%',
-        transition: 'all 0.3s',
+        transition: 'all 0.3s', 
         overflow: 'hidden',
         '&:hover': {
             transform: 'scale(1.1)',
