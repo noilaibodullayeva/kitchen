@@ -98,6 +98,7 @@ const styles = {
         width: '100%',
         gap: '40px',
         backgroundColor: '#EEEEEE',
+        height: {md:'600px', xs: '1000px'}
     },
     box8_1: {
         display: 'flex',

@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
 // import required modules
 import { Navigation } from 'swiper/modules';
 import { Box, Typography } from '@mui/material';
@@ -17,6 +16,7 @@ import pic1 from "../img/eventP.webp"
 import pic2 from "../img/eventP2.webp"
 import pic3 from "../img/eventP3.webp"
 import { ArrowRightAlt } from '@mui/icons-material';
+
 
 export default function Section7() {
     return (
