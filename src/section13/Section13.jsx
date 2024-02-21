@@ -16,20 +16,31 @@ export default function Section13() {
         <Box sx={{
             display: 'flex',
             flexDirection: { md: 'row', xs: 'column' },
-            alignItems: 'center',
+            alignItems: 'baseline',
             justifyContent: 'center',
-            p: '25px 25px'
+            p: '70px 25px',
+            backgroundColor: '#222',
+            gap:'30px'
         }}>
             <Box>
                 <Typography sx={styles.contact}>CONTACT US</Typography>
                 <Typography sx={styles.lorems}>
-                    <LocationCity /> 8th floor, 379 Hudson St, New York, NY 10018
+                    <LocationCity sx={{
+                        mb: '-10px',
+                        color: '#999'
+                    }} /> 8th floor, 379 Hudson St, New York, NY 10018
                 </Typography>
                 <Typography sx={styles.lorems}>
-                    <Phone /> (+1) 96 716 6879
+                    <Phone sx={{
+                        mb: '-10px',
+                        color: '#999'
+                    }} /> (+1) 96 716 6879
                 </Typography>
                 <Typography sx={styles.lorems}>
-                    <Email /> contact@site.com
+                    <Email sx={{
+                        mb: '-10px',
+                        color: '#999'
+                    }} /> contact@site.com
                 </Typography>
 
                 <Typography sx={styles.contact}>OPENING TIMES</Typography>
@@ -39,9 +50,13 @@ export default function Section13() {
             </Box>
 
             <Box>
-            <Typography sx={styles.contact}>LATEST TWITTER</Typography>
+                <Typography sx={styles.contact}>LATEST TWITTER</Typography>
                 <Typography sx={styles.qizil}>
-                    <Twitter /> @colorlib
+                    <Twitter sx={{
+                        color:'#fff',
+                        fontSize: '20px',
+                        mb:'-7px'
+                    }} /> @colorlib
                 </Typography>
                 <Typography sx={styles.lorems}>
                     Activello is a good option. It has a slider built into that<br /> displays the featured image in the slider.
@@ -49,19 +64,88 @@ export default function Section13() {
                 <Typography sx={styles.qizil}>https://buff.ly/2zaSfAQ</Typography>
                 <Typography sx={styles.sana}>21 Dec 2017</Typography>
                 <Typography sx={styles.qizil}>
-                    <Twitter /> @colorlib
+                    <Twitter sx={{
+                        color:'#fff',
+                        fontSize: '20px',
+                        mb:'-7px'
+                    }} /> @colorlib
                 </Typography>
                 <Typography sx={styles.lorems}>
-                    Activello is a good option. It has a slider built into that<br /> displays
-                    <Typography sx={styles.qizil}>https://buff.ly/2zaSfAQ</Typography>
+                    Activello is a good option. It has a slider built into that<br/> displays
                 </Typography>
+                <Typography sx={styles.qizil}>https://buff.ly/2zaSfAQ</Typography>
                 <Typography sx={styles.sana}>21 Dec 2017</Typography>
             </Box>
 
             <Box>
                 <Typography sx={styles.contact}>GALLERY</Typography>
-
+                <Box sx={styles.galleryDraw2}>
+                    <img src={Img1} alt="img1" className="imgG" />
+                    <img src={Img2} alt="img1" className="imgG" />
+                    <img src={Img3} alt="img1" className="imgG" />
+                    <img src={Img4} alt="img1" className="imgG" />
+                    <img src={Img7} alt="img1" className="imgG" />
+                    <img src={Img2} alt="img1" className="imgG" />
+                    <img src={Img5} alt="img1" className="imgG" />
+                    <img src={Img1} alt="img1" className="imgG" />
+                    <img src={Img6} alt="img1" className="imgG" />
+                    <img src={Img7} alt="img1" className="imgG" />
+                    <img src={Img8} alt="img1" className="imgG" />
+                    <img src={Img9} alt="img1" className="imgG" />
+                </Box>
             </Box>
         </Box>
     )
+}
+
+const styles = {
+    contact: {
+        fontFamily: 'Poppins',
+        fontWeight: 500,
+        fontSize: '18px',
+        color: 'white',
+        textTransform: 'uppercase',
+        letterSpacing: '2px',
+        mb: '33px',
+    },
+    lorems: {
+        fontFamily: 'Montserrat',
+        fontWeight: 400,
+        fontSize: '13px',
+        color: '#999999',
+        lineHeight: 1.7,
+        mb: '14px',
+        alignItems: 'baseline',
+        display: 'flex',
+        justifyContent: 'left',
+        flexDirection: 'row',
+        gap: '3px'
+    },
+    icon: {
+        fontWeight: 400,
+        fontSize: '13px',
+        color: '#999999',
+        lineHeight: 1.7,
+        mb: '14px'
+    },
+    qizil: {
+        fontFamily: 'Montserrat',
+        fontWeight: 400,
+        fontSize: '13px',
+        color: '#ec1d25',
+        lineHeight: 1.7,
+    },
+    sana: {
+        fontFamily: 'Montserrat',
+        fontWeight: 400,
+        fontSize: '12px',
+        color: '#555555',
+        m:'20px 0 20px 0'
+    },
+    galleryDraw2: {
+        display: 'grid',
+        gridTemplateColumns: ' auto auto auto auto',
+        gap: '10px',
+        margin: '10px 0'
+    }
 }

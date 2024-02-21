@@ -2,7 +2,16 @@ import { Box, Button, IconButton, List, ListItemButton, ListItemIcon, ListItemTe
 import React, { useState } from "react";
 import { Drawer } from "@mui/material";
 import { Menu } from "@mui/icons-material";
-   
+import Img1 from "../img/gallarey1.webp"
+import Img2 from "../img/gallarey2.webp"
+import Img3 from "../img/gallarey3.webp"
+import Img4 from "../img/gallarey4.webp"
+import Img5 from "../img/gallarey5.webp"
+import Img6 from "../img/gallarey6.webp"
+import Img7 from "../img/gallarey7.webp"
+import Img8 from "../img/gallarey8.webp"
+import Img9 from "../img/gallarey9.webp"
+
 import "./header.css"
 
 const Pages = ["Services", "Products", "ContactUs", "AboutUs", "LogIn", "LogOut"]
@@ -19,7 +28,7 @@ function Drawercomponent() {
                         Pages.map((page, index) => (
                             <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
                                 <ListItemIcon>
-                                    <ListItemText sx={{alignItems:'center'}}>
+                                    <ListItemText sx={{ alignItems: 'center' }}>
                                         {page}
                                     </ListItemText>
                                 </ListItemIcon>
@@ -32,7 +41,7 @@ function Drawercomponent() {
                         flexDirection: 'column',
                         alignItems: 'center'
                     }}>
-                        <Typography sx={{color:'#777', fontSize:'25px'}}>Gallary</Typography>
+                        <Typography sx={{ color: '#777', fontSize: '25px' }}>Gallary</Typography>
                         <Box sx={styles.galleryDraw}>
                             <img src={Img1} alt="img1" className="imgG" />
                             <img src={Img2} alt="img1" className="imgG" />

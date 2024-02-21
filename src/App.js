@@ -12,6 +12,8 @@ import Section9 from './section9/Section9';
 import Section10 from './section10/Section10';
 import Section11 from './section11/Section11';
 import Section12 from './section12/Section12';
+import Section13 from './section13/Section13';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
       <Section10 />
       <Section11 />
       <Section12 />
+      <Section13 />
+      <Footer/>       
     </Box>
   );
 }
